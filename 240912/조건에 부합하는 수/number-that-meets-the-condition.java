@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        for (int i = 1; i <=a ; i++) {
+        for (int i = 1; i <= a ; i++) {
             if(i % 2 == 0){
                 continue;
             }
@@ -14,7 +14,7 @@ public class Main {
             if (i % 7 < 4) {
                 continue;
             }
-            System.out.print(a + " ");
+            System.out.print(i + " ");
         }
     }
 }

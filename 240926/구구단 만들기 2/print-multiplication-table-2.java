@@ -7,12 +7,12 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         for (int i = 0; i < 4; i++) {
-            for (int k = b; k >= b - a; k--) {
+            for (int k = b; k >= 0; k--) {
                 System.out.printf("%d * %d = %d", k, (i + 1) * 2, k * (i + 1) * 2);
                 if(k == a) {
                     break;
                 }
-                if(k != b - a) {
+                else {
                     System.out.print(" / ");
                 }
             }

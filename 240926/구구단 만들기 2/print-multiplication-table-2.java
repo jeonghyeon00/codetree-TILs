@@ -9,6 +9,9 @@ public class Main {
         for (int i = 0; i < 4; i++) {
             for (int k = b; k >= b - a; k--) {
                 System.out.printf("%d * %d = %d", k, (i + 1) * 2, k * (i + 1) * 2);
+                if(k == a) {
+                    break;
+                }
                 if(k != b - a) {
                     System.out.print(" / ");
                 }

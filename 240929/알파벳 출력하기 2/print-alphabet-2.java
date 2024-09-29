@@ -10,6 +10,9 @@ public class Main {
                 System.out.print("  ");
             }
             for (int j = 0; j < n - i; j++) {
+                if(a > 90) {
+                    a = 65;
+                }
                 System.out.print((char) a++ + " ");
             }
             System.out.println();

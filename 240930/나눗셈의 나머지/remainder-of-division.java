@@ -12,7 +12,7 @@ public class Main {
             int leftover = a % b;
             arr[leftover] = arr[leftover] + 1;
             a = a / b;
-            if(a == 1) {
+            if(a == 1 || a == 0) {
                 break;
             }
         }

@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -14,7 +12,7 @@ public class Main {
             int leftover = a % b;
             arr[leftover] = arr[leftover] + 1;
             a = a / b;
-            if(a == 0) {
+            if(a == 1) {
                 break;
             }
         }

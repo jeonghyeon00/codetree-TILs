@@ -13,8 +13,8 @@ public class Main {
         }
         int m = sc.nextInt();
         for (int i = 0; i < m; i++) {
-            int y = sc.nextInt();
-            int x = sc.nextInt();
+            int y = sc.nextInt() - 1;
+            int x = sc.nextInt() - 1;
             arr[y][x] = y*x;
         }
         for (int i = 0; i < n; i++) {

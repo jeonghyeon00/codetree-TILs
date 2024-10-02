@@ -11,7 +11,7 @@ public class Main {
         }
         int answer = 999;
         for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n - 1; j++) {
+            for (int j = i + 1; j < n; j++) {
                 answer = Math.min(answer, Math.abs(arr[i] - arr[j]));
             }
         }

@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String string = sc.next();
 
-        for (int i = 0; i < string.length(); i++) {
+        for (int i = string.length(); i >= 0; i--) {
             if(i % 2 != 0) {
                 System.out.print(string.charAt(i));
             }

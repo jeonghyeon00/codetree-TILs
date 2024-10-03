@@ -6,40 +6,54 @@ public class Main {
         int year = sc.nextInt();
         int month = sc.nextInt();
         int day = sc.nextInt();
-        switch(month) {
-            case 1: case 3: case 5: case 7: case 8: case 10: case 12: {
-                if(day > 31) {
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12: {
+                if (day > 31) {
                     System.out.println(-1);
                 } else {
-                    if(month >= 3 && month <= 5) {
+                    if (month >= 3 && month <= 5) {
                         System.out.println("Spring");
-                    } else if(month >= 6 && month <= 8) {
+                    } else if (month >= 6 && month <= 8) {
                         System.out.println("Summer");
-                    } else if(month >= 9 && month <= 11) {
+                    } else if (month >= 9 && month <= 11) {
                         System.out.println("Fall");
                     } else {
                         System.out.println("Winter");
                     }
                 }
+                break;
             }
-            case 2 : {
-                if(year % 4 == 0 && year % 100 != 0 && year % 400 == 0) {
-                    if(day > 29) {
+            case 2: {
+                if (year % 4 == 0 && year % 100 != 0 || (year % 400 == 0)) {
+                    if (day > 29) {
+                        System.out.println(-1);
+                    } else {
+                        System.out.println("Winter");
+                    }
+                } else {
+                    if (day > 28) {
                         System.out.println(-1);
                     } else {
                         System.out.println("Winter");
                     }
                 }
+                break;
             }
             default: {
-                if(day > 30) {
+                if (day > 30) {
                     System.out.println(-1);
                 } else {
-                    if(month >= 3 && month <= 5) {
+                    if (month >= 3 && month <= 5) {
                         System.out.println("Spring");
-                    } else if(month >= 6 && month <= 8) {
+                    } else if (month >= 6 && month <= 8) {
                         System.out.println("Summer");
-                    } else if(month >= 9 && month <= 11) {
+                    } else if (month >= 9 && month <= 11) {
                         System.out.println("Fall");
                     } else {
                         System.out.println("Winter");

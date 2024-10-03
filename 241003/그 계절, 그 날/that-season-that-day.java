@@ -8,7 +8,7 @@ public class Main {
         int day = sc.nextInt();
         switch(month) {
             case 1: case 3: case 5: case 7: case 8: case 10: case 12: {
-                if(day >= 31) {
+                if(day > 31) {
                     System.out.println(-1);
                 } else {
                     if(month >= 3 && month <= 5) {
@@ -24,7 +24,7 @@ public class Main {
             }
             case 2 : {
                 if(year % 4 == 0 && year % 100 != 0 && year % 400 == 0) {
-                    if(day >= 29) {
+                    if(day > 29) {
                         System.out.println(-1);
                     } else {
                         System.out.println("Winter");
@@ -32,7 +32,7 @@ public class Main {
                 }
             }
             default: {
-                if(day >= 30) {
+                if(day > 30) {
                     System.out.println(-1);
                 } else {
                     if(month >= 3 && month <= 5) {

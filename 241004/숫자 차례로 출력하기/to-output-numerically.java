@@ -1,18 +1,16 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void solution1(int now, int until) {
-        if(now > until) {
-            System.out.println();
+    public static void solution1(int n) {
+        if(n == 0) {
             return;
         }
-        System.out.print(now + " ");
-        solution1(now + 1, until);
+        solution1(n - 1);
+        System.out.print(n + " ");
     }
 
     public static void solution2(int n) {
         if(n == 0) {
-            System.out.println();
             return;
         }
         System.out.print(n + " ");
@@ -24,7 +22,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        solution1(1, n);
+        solution1(n);
+        System.out.println();
         solution2(n);
     }
 }

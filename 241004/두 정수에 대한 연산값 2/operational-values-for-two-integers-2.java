@@ -18,10 +18,10 @@ public class Main {
             a = maxMultiply(a, b);
             b = minAdd(a, b);
         } else {
-            b = minAdd(a, b);
-            a = maxMultiply(a, b);
+            b = maxMultiply(a, b);
+            a = minAdd(a, b);
         }
-        
+
         System.out.printf("%d %d", a, b);
     }
 }

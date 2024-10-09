@@ -19,15 +19,16 @@ public class Main {
         }
 
         int lastNumber;
-        int sameNumberCount = 0;
+        int sameNumberCount = 1;
         // 가로 탐색
         for (int row = 0; row < n; row++) {
-            lastNumber = matrix[row][0];
+            lastNumber = -1;
             for (int col = 0; col < n; col++) {
                 if(lastNumber == matrix[row][col]) {
                     sameNumberCount++;
                     if(sameNumberCount >= m) {
-                        sameNumberCount = 0;
+                        sameNumberCount = 1;
+                        count++;
                         break;
                     }
                 } else {
@@ -42,21 +43,19 @@ public class Main {
 
         // 세로 탐색
         for (int col = 0; col < n; col++) {
-            lastNumber = matrix[0][col];
+            lastNumber = -1;
             for (int row = 0; row < n; row++) {
                 if(lastNumber == matrix[row][col]) {
                     sameNumberCount++;
                     if(sameNumberCount >= m) {
-                        sameNumberCount = 0;
+                        sameNumberCount = 1;
+                        count++;
                         break;
                     }
                 } else {
                     lastNumber = matrix[row][col];
                     sameNumberCount = 1;
                 }
-            }
-            if(sameNumberCount >= m) {
-                count++;
             }
         }
 

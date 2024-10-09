@@ -27,6 +27,7 @@ public class Main {
                 if(lastNumber == matrix[row][col]) {
                     sameNumberCount++;
                     if(sameNumberCount >= m) {
+                        sameNumberCount = 0;
                         break;
                     }
                 } else {
@@ -46,6 +47,7 @@ public class Main {
                 if(lastNumber == matrix[row][col]) {
                     sameNumberCount++;
                     if(sameNumberCount >= m) {
+                        sameNumberCount = 0;
                         break;
                     }
                 } else {

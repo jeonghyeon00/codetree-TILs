@@ -35,6 +35,7 @@ public class Main {
             }
             if(sameNumberCount >= m) {
                 count++;
+                sameNumberCount = 1;
             }
         }
 
@@ -53,6 +54,7 @@ public class Main {
             }
             if(sameNumberCount >= m) {
                 count++;
+                sameNumberCount = 1;
             }
         }
 

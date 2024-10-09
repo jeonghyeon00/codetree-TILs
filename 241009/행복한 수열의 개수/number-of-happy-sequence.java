@@ -28,7 +28,6 @@ public class Main {
                     sameNumberCount++;
                     if(sameNumberCount >= m) {
                         sameNumberCount = 1;
-                        count++;
                         break;
                     }
                 } else {
@@ -49,7 +48,6 @@ public class Main {
                     sameNumberCount++;
                     if(sameNumberCount >= m) {
                         sameNumberCount = 1;
-                        count++;
                         break;
                     }
                 } else {
@@ -57,7 +55,11 @@ public class Main {
                     sameNumberCount = 1;
                 }
             }
+            if(sameNumberCount >= m) {
+                count++;
+            }
         }
+
 
         System.out.println(count);
     }

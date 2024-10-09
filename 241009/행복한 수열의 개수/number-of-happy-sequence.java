@@ -26,6 +26,9 @@ public class Main {
             for (int col = 0; col < n; col++) {
                 if(lastNumber == matrix[row][col]) {
                     sameNumberCount++;
+                    if(sameNumberCount >= m) {
+                        break;
+                    }
                 } else {
                     lastNumber = matrix[row][col];
                     sameNumberCount = 1;
@@ -42,6 +45,9 @@ public class Main {
             for (int row = 0; row < n; row++) {
                 if(lastNumber == matrix[row][col]) {
                     sameNumberCount++;
+                    if(sameNumberCount >= m) {
+                        break;
+                    }
                 } else {
                     lastNumber = matrix[row][col];
                     sameNumberCount = 1;

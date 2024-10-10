@@ -36,7 +36,7 @@ public class Main {
 
     public static int getGiukSum(int startRow, int startCol) {
         try {
-            return grid[startRow][startCol] + grid[startRow][startCol] + grid[startRow + 1][startCol + 1];
+            return grid[startRow][startCol] + grid[startRow][startCol + 1] + grid[startRow + 1][startCol + 1];
         } catch (ArrayIndexOutOfBoundsException e) {
             return 0;
         }

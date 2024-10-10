@@ -38,7 +38,7 @@ public class Main {
                 for (int k = 0; k < 2 * (n - 1); k++) {
                     int goldCount = getGoldCount(row, col, k);
                     int cost = getCost(k);
-                    if(goldCount * m > cost) {
+                    if(goldCount * m >= cost) {
                         answer = Math.max(answer, goldCount);
                     }
                 }

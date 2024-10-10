@@ -35,7 +35,7 @@ public class Main {
 
         for (int row = 0; row < n; row++) {
             for (int col = 0; col < n; col++) {
-                for (int k = 0; k < 2 * (n - 1); k++) {
+                for (int k = 0; k <= 2 * (n - 1); k++) {
                     int goldCount = getGoldCount(row, col, k);
                     int cost = getCost(k);
                     if(goldCount * m >= cost) {

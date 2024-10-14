@@ -51,8 +51,8 @@ public class Main {
                         visited[i][j] = true;
                         blockCount = 1;
                         dfs(i, j, k);
+                        maxBlockSize = Math.max(blockCount, maxBlockSize);
                         if (blockCount >= 4) {
-                            maxBlockSize = Math.max(blockCount, maxBlockSize);
                             blockExplodeCount++;
                         }
                     }

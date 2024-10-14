@@ -69,6 +69,6 @@ public class Main {
             }
         }
 
-        System.out.println(smallestK + " " + maxZoneCount);
+        System.out.println(maxZoneCount + " " + smallestK);
     }
 }

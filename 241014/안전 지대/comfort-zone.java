@@ -61,7 +61,7 @@ public class Main {
             }
         }
 
-        for (int k = 0; k <= maxElement; k++) {
+        for (int k = 1; k <= maxElement; k++) {
             int zoneNum = getZoneCount(k);
             if(zoneNum > maxZoneCount) {
                 maxZoneCount = zoneNum;

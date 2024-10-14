@@ -32,8 +32,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
-        int maxBlockCount = 0;
-        int blockExplodeNumber = 0;
+        int maxBlockSize = 0;
+        int blockExplodeCount = 0;
         grid = new int[n][n];
 
         for (int i = 0; i < n; i++) {
@@ -43,22 +43,22 @@ public class Main {
         }
 
         for (int k = 1; k <= 100; k++) {
+            visited = new boolean[n][n];
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
                     blockCount = 0;
-                    visited = new boolean[n][n];
                     if (grid[i][j] == k) {
                         visited[i][j] = true;
                         blockCount = 1;
                         dfs(i, j, k);
                         if (blockCount >= 4) {
-                            maxBlockCount = blockCount;
-                            blockExplodeNumber = grid[i][j];
+                            maxBlockSize = Math.max(blockCount, maxBlockSize);
+                            blockExplodeCount++;
                         }
                     }
                 }
             }
         }
-        System.out.println(blockExplodeNumber + " " + maxBlockCount);
+        System.out.println(blockExplodeCount + " " + maxBlockSize);
     }
 }

@@ -10,7 +10,7 @@ public class Main {
         dp[3] = 22;
 
         int n = sc.nextInt();
-        for(int i = 3; i<= n; i++) {
+        for(int i = 4; i<= n; i++) {
             dp[i] = (dp[i - 1] + dp[i - 2]) % 1000000007;
         }
         System.out.print(dp[n]);

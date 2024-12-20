@@ -9,7 +9,7 @@ public class Main {
         int count = 0;
         for(int i = 0; i < n; i++) {
             for(int j = i+1; j < n; j++){
-                if(str.charAt(i) == '(' && str.charAt(j) == ')'){
+                if(input.charAt(i) == '(' && input.charAt(j) == ')'){
                     count++;
                 }
             }
